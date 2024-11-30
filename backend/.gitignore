@@ -1,1 +1,5 @@
+# ignoring environment
 .env
+
+# ignoring generated file from atlas migration
+atlas.sum
