@@ -1,3 +1,5 @@
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
+
 -- Create "accounts" table
 CREATE TABLE "accounts" (
   "account_id" uuid NOT NULL DEFAULT uuid_generate_v4(),

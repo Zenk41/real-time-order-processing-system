@@ -1,0 +1,2 @@
+-- Create "admin" table
+CREATE TABLE "public"."admin" ("admin_id" uuid NOT NULL DEFAULT public.uuid_generate_v4(), "admin_name" character varying(50) NOT NULL, "admin_email" character varying(255) NOT NULL, "admin_password" character varying(255) NOT NULL, "role" character varying(50) NOT NULL DEFAULT 'admin', "created_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, "updated_at" timestamptz NOT NULL DEFAULT CURRENT_TIMESTAMP, PRIMARY KEY ("admin_id"), CONSTRAINT "admin_email_unique" UNIQUE ("admin_email"));
