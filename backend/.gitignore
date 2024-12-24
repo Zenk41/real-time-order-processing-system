@@ -3,3 +3,5 @@
 
 # ignoring generated file from atlas migration
 atlas.sum
+
+tmp
